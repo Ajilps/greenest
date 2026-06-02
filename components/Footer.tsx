@@ -8,12 +8,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-1">
-            <h2 className="font-heading text-2xl font-bold mb-3">GreenNest</h2>
+            <h2 className="font-heading text-2xl font-bold mb-3">GreeNest</h2>
             <p className="text-white/70 text-sm leading-relaxed mb-4">
               Where Nature Feels Like Home. A future eco-friendly mountain homestay in Kanthalloor, Kerala.
             </p>
             <a
-              href="https://wa.me/919999999999?text=Hello%20GreenNest%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
+              href="https://wa.me/919999999999?text=Hello%20GreeNest%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366] text-white text-xs font-semibold hover:bg-[#20b858] transition-colors"
@@ -27,7 +27,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-white/70">
               {[
                 { href: '/', label: 'Home' },
-                { href: '/about', label: 'About GreenNest' },
+                { href: '/about', label: 'About GreeNest' },
                 { href: '/kanthalloor', label: 'Why Kanthalloor' },
                 { href: '/investment', label: 'Invest With Us' },
                 { href: '/waitlist', label: 'Join Waitlist' },
@@ -70,8 +70,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={14} />
-                <a href="mailto:hello@greennest.com" className="hover:text-white transition-colors">
-                  hello@greennest.com
+                <a href="mailto:hello@GreeNest.com" className="hover:text-white transition-colors">
+                  hello@GreeNest.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -93,7 +93,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/50">
-          <p>&copy; {year} GreenNest. All rights reserved.</p>
+          <p>&copy; {year} GreeNest. All rights reserved.</p>
           <p>Kanthalloor, Kerala &bull; Eco-friendly Mountain Retreat &bull; Coming Soon</p>
         </div>
       </div>

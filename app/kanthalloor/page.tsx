@@ -5,7 +5,7 @@ import FAQ from '@/components/FAQ';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Kanthalloor Travel Guide – Kerala Highlands | GreenNest',
+  title: 'Kanthalloor Travel Guide – Kerala Highlands | GreeNest',
   description:
     'Discover what makes Kanthalloor, Kerala special — apple orchards, strawberry farms, high-range climate, mountain views, and eco-tourism. Your complete travel guide to Kanthalloor.',
   keywords:
@@ -218,9 +218,9 @@ export default function KanthalloorPage() {
         {/* CTA */}
         <section className="py-20 bg-primary text-white text-center">
           <div className="max-w-2xl mx-auto px-4">
-            <h2 className="font-heading text-4xl font-bold mb-4">Experience Kanthalloor with GreenNest</h2>
+            <h2 className="font-heading text-4xl font-bold mb-4">Experience Kanthalloor with GreeNest</h2>
             <p className="text-white/65 mb-8">
-              Join our waiting list to be the first to experience GreenNest — right in the heart of Kanthalloor.
+              Join our waiting list to be the first to experience GreeNest — right in the heart of Kanthalloor.
             </p>
             <Link
               href="/waitlist"

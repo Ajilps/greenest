@@ -29,7 +29,7 @@ export default function Navbar() {
             </svg>
           </span>
           <span className="font-heading text-xl font-bold text-primary group-hover:text-secondary transition-colors">
-            GreenNest
+            GreeNest
           </span>
         </Link>
 

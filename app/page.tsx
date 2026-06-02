@@ -21,10 +21,10 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'GreenNest – Where Nature Feels Like Home | Kanthalloor, Kerala',
+  title: 'GreeNest – Where Nature Feels Like Home | Kanthalloor, Kerala',
   description:
-    'GreenNest is a premium eco-friendly mountain homestay coming soon to Kanthalloor, Kerala. Join the waiting list, explore future experiences, and discover investment opportunities in sustainable tourism.',
-  alternates: { canonical: 'https://www.greennest.com' },
+    'GreeNest is a premium eco-friendly mountain homestay coming soon to Kanthalloor, Kerala. Join the waiting list, explore future experiences, and discover investment opportunities in sustainable tourism.',
+  alternates: { canonical: 'https://www.GreeNest.com' },
 };
 
 const experiences = [
@@ -80,34 +80,34 @@ const experiences = [
 
 const faqItems = [
   {
-    question: 'What is GreenNest?',
+    question: 'What is GreeNest?',
     answer:
-      'GreenNest is a future premium eco-friendly mountain homestay being built in Kanthalloor, Idukki District, Kerala, India. It is designed for families and small groups seeking a peaceful, nature-immersive retreat with a focus on sustainability and authentic experiences.',
+      'GreeNest is a future premium eco-friendly mountain homestay being built in Kanthalloor, Idukki District, Kerala, India. It is designed for families and small groups seeking a peaceful, nature-immersive retreat with a focus on sustainability and authentic experiences.',
   },
   {
-    question: 'Where exactly is GreenNest located?',
+    question: 'Where exactly is GreeNest located?',
     answer:
-      'GreenNest will be located in Kanthalloor, a picturesque village in the Idukki District of Kerala, situated in the high ranges of the Western Ghats at around 1,400 metres above sea level.',
+      'GreeNest will be located in Kanthalloor, a picturesque village in the Idukki District of Kerala, situated in the high ranges of the Western Ghats at around 1,400 metres above sea level.',
   },
   {
-    question: 'When will GreenNest open?',
+    question: 'When will GreeNest open?',
     answer:
-      "GreenNest is currently in the planning phase. We are working diligently to complete construction and welcome our first guests. Joining the waiting list ensures you receive updates and early access before the public launch.",
+      "GreeNest is currently in the planning phase. We are working diligently to complete construction and welcome our first guests. Joining the waiting list ensures you receive updates and early access before the public launch.",
   },
   {
     question: 'How can I join the waiting list?',
     answer:
-      "Simply click the 'Join Waiting List' button and fill in your details. You'll receive priority access, launch updates, and exclusive early-bird offers once GreenNest is ready to welcome guests.",
+      "Simply click the 'Join Waiting List' button and fill in your details. You'll receive priority access, launch updates, and exclusive early-bird offers once GreeNest is ready to welcome guests.",
   },
   {
-    question: 'Is GreenNest suitable for families with children?',
+    question: 'Is GreeNest suitable for families with children?',
     answer:
-      'Absolutely. GreenNest is specifically designed with families in mind — safe outdoor spaces, family-friendly activities, farm experiences, and a peaceful environment that children and adults alike will love.',
+      'Absolutely. GreeNest is specifically designed with families in mind — safe outdoor spaces, family-friendly activities, farm experiences, and a peaceful environment that children and adults alike will love.',
   },
   {
     question: 'Are there investment opportunities available?',
     answer:
-      'Yes. GreenNest welcomes investors who believe in the future of sustainable eco-tourism in Kerala. Visit our Investment page to learn more or request an investment deck.',
+      'Yes. GreeNest welcomes investors who believe in the future of sustainable eco-tourism in Kerala. Visit our Investment page to learn more or request an investment deck.',
   },
   {
     question: 'What makes Kanthalloor special?',
@@ -139,16 +139,16 @@ export default function HomePage() {
         <Hero />
 
         {/* About Preview */}
-        <section className="py-24 bg-white" aria-label="About GreenNest">
+        <section className="py-24 bg-white" aria-label="About GreeNest">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
-                <p className="text-xs uppercase tracking-widest text-secondary font-semibold mb-4">About GreenNest</p>
+                <p className="text-xs uppercase tracking-widest text-secondary font-semibold mb-4">About GreeNest</p>
                 <h2 className="font-heading text-4xl lg:text-5xl font-bold text-text mb-6 leading-tight">
                   A Retreat Rooted in Nature, Designed for You
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-5">
-                  GreenNest is more than a place to stay — it&rsquo;s a living, breathing space where the mountains
+                  GreeNest is more than a place to stay — it&rsquo;s a living, breathing space where the mountains
                   become your backyard. Nestled in the pristine high ranges of Kanthalloor, Kerala, we are
                   building a homestay that honours the land while providing families and small groups with a
                   truly memorable escape.
@@ -186,7 +186,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="aspect-[4/5] rounded-3xl bg-gradient-to-br from-[#2E5E4E] via-[#4F8A63] to-[#1a3d2e] overflow-hidden shadow-2xl flex items-center justify-center">
                   <div className="text-center px-8">
-                    <p className="font-heading text-5xl font-bold text-white mb-3">GreenNest</p>
+                    <p className="font-heading text-5xl font-bold text-white mb-3">GreeNest</p>
                     <p className="text-white/60 text-sm italic mb-10">Kanthalloor, Kerala</p>
                     <div className="flex flex-col gap-3 text-left">
                       {[
@@ -263,13 +263,13 @@ export default function HomePage() {
         </section>
 
         {/* Future Experiences */}
-        <section className="py-24 bg-white" aria-label="Future experiences at GreenNest">
+        <section className="py-24 bg-white" aria-label="Future experiences at GreeNest">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <p className="text-xs uppercase tracking-widest text-secondary font-semibold mb-3">Experiences</p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold text-text mb-5">What Awaits You</h2>
               <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                Every moment at GreenNest will be crafted around nature, community, and genuine mountain living.
+                Every moment at GreeNest will be crafted around nature, community, and genuine mountain living.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -286,12 +286,12 @@ export default function HomePage() {
         {/* Waitlist CTA */}
         <section
           className="py-24 bg-gradient-to-br from-[#1a3d2e] via-[#2E5E4E] to-[#4F8A63]"
-          aria-label="Join GreenNest waiting list"
+          aria-label="Join GreeNest waiting list"
         >
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-xs uppercase tracking-widest text-[#86efac] font-semibold mb-4">Limited Spots</p>
             <h2 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-5">
-              Be Among the First to Experience GreenNest
+              Be Among the First to Experience GreeNest
             </h2>
             <p className="text-white/65 text-base leading-relaxed mb-10">
               Join the waiting list today and receive exclusive updates, early access to bookings,
@@ -305,7 +305,7 @@ export default function HomePage() {
                 Join the Waiting List
               </Link>
               <a
-                href="https://wa.me/919999999999?text=Hello%20GreenNest%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
+                href="https://wa.me/919999999999?text=Hello%20GreeNest%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-10 py-4 rounded-full border-2 border-white/50 text-white font-bold text-sm hover:bg-white/10 transition-all duration-200"
@@ -320,7 +320,7 @@ export default function HomePage() {
         <FAQ
           items={faqItems}
           title="Got Questions?"
-          subtitle="Everything you need to know about GreenNest and Kanthalloor."
+          subtitle="Everything you need to know about GreeNest and Kanthalloor."
         />
       </main>
       <Footer />

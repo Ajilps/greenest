@@ -1,12 +1,12 @@
-'use client';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
+"use client";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
     <section
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      aria-label="GreenNest hero section"
+      aria-label="GreeNest hero section"
     >
       {/* Rich gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0f2a1e] via-[#1a3d2e] to-[#2E5E4E]" />
@@ -20,14 +20,23 @@ export default function Hero() {
         className="absolute inset-0 opacity-[0.07]"
         style={{
           backgroundImage: `radial-gradient(circle, #F7F6F2 1px, transparent 1px)`,
-          backgroundSize: '40px 40px',
+          backgroundSize: "40px 40px",
         }}
       />
 
       {/* Mountain silhouette */}
       <div className="absolute bottom-0 left-0 right-0 h-64 overflow-hidden opacity-20">
-        <svg viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" className="w-full h-full">
-          <path d="M0 200L120 120L280 170L440 80L600 140L720 40L880 110L1020 60L1200 130L1440 80V200H0Z" fill="#F7F6F2" />
+        <svg
+          viewBox="0 0 1440 200"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          className="w-full h-full"
+        >
+          <path
+            d="M0 200L120 120L280 170L440 80L600 140L720 40L880 110L1020 60L1200 130L1440 80V200H0Z"
+            fill="#F7F6F2"
+          />
         </svg>
       </div>
 
@@ -35,7 +44,7 @@ export default function Hero() {
       <motion.div
         className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-[#F7F6F2]/10 to-transparent"
         animate={{ opacity: [0.3, 0.6, 0.3] }}
-        transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
+        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
       />
 
       {/* Main content */}
@@ -57,7 +66,7 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.1 }}
           className="font-heading text-7xl sm:text-8xl lg:text-9xl font-bold text-white mb-6 leading-tight tracking-tight"
         >
-          Green<span className="text-[#86efac]">Nest</span>
+          Gree<span className="text-[#86efac]">Nest</span>
         </motion.h1>
 
         <motion.p
@@ -75,8 +84,9 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.35 }}
           className="text-base sm:text-lg text-white/55 max-w-2xl mx-auto mb-12 leading-relaxed"
         >
-          Experience peaceful mornings, mist-covered hills, fruit orchards, and unforgettable memories
-          in one of Kerala&rsquo;s most beautiful high-range destinations.
+          Experience peaceful mornings, mist-covered hills, fruit orchards, and
+          unforgettable memories in one of Kerala&rsquo;s most beautiful
+          high-range destinations.
         </motion.p>
 
         <motion.div
@@ -92,7 +102,7 @@ export default function Hero() {
             Join the Waiting List
           </Link>
           <a
-            href="https://wa.me/919999999999?text=Hello%20GreenNest%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
+            href="https://wa.me/919999999999?text=Hello%20GreeNest%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 rounded-full border-2 border-white/50 text-white font-bold text-sm hover:bg-white/10 hover:scale-105 transition-all duration-200 backdrop-blur-sm"
@@ -108,7 +118,12 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.7 }}
           className="flex flex-wrap items-center justify-center gap-8 mt-16 text-white/40 text-xs uppercase tracking-widest"
         >
-          {['Eco-Friendly Design', 'Family Focused', 'Kanthalloor, Kerala', 'Sustainable Tourism'].map((t) => (
+          {[
+            "Eco-Friendly Design",
+            "Family Focused",
+            "Kanthalloor, Kerala",
+            "Sustainable Tourism",
+          ].map((t) => (
             <span key={t} className="flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-white/40" />
               {t}
@@ -125,7 +140,12 @@ export default function Hero() {
       >
         <span className="uppercase tracking-widest">Scroll</span>
         <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
-          <path d="M1 1l7 7 7-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <path
+            d="M1 1l7 7 7-7"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          />
         </svg>
       </motion.div>
     </section>

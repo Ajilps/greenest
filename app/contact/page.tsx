@@ -4,9 +4,9 @@ import Footer from '@/components/Footer';
 import { Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Contact GreenNest – Get in Touch',
+  title: 'Contact GreeNest – Get in Touch',
   description:
-    'Contact the GreenNest team. Send us a message, find our location in Kanthalloor Kerala, or chat with us on WhatsApp.',
+    'Contact the GreeNest team. Send us a message, find our location in Kanthalloor Kerala, or chat with us on WhatsApp.',
 };
 
 export default function ContactPage() {
@@ -18,7 +18,7 @@ export default function ContactPage() {
         <section className="pt-32 pb-20 bg-gradient-to-br from-[#0f2a1e] via-[#2E5E4E] to-[#4F8A63]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-xs uppercase tracking-widest text-[#86efac] font-semibold mb-4">Say Hello</p>
-            <h1 className="font-heading text-5xl lg:text-6xl font-bold text-white mb-6">Contact GreenNest</h1>
+            <h1 className="font-heading text-5xl lg:text-6xl font-bold text-white mb-6">Contact GreeNest</h1>
             <p className="text-white/65 text-lg leading-relaxed max-w-xl mx-auto">
               Have a question, want to invest, or just curious about the project? We&rsquo;d love to hear from you.
             </p>
@@ -36,13 +36,13 @@ export default function ContactPage() {
                 <h2 className="font-heading text-4xl font-bold text-text mb-6">We&rsquo;re Here to Help</h2>
                 <p className="text-gray-600 leading-relaxed mb-10">
                   Whether you&rsquo;re a future guest, an investor, or simply someone who loves the idea of
-                  GreenNest — reach out and let&rsquo;s talk. We respond to every message personally.
+                  GreeNest — reach out and let&rsquo;s talk. We respond to every message personally.
                 </p>
 
                 <div className="space-y-6 mb-10">
                   {[
                     { icon: MapPin, label: 'Location', value: 'Kanthalloor, Idukki District, Kerala 685 619, India' },
-                    { icon: Mail, label: 'Email', value: 'hello@greennest.com', href: 'mailto:hello@greennest.com' },
+                    { icon: Mail, label: 'Email', value: 'hello@GreeNest.com', href: 'mailto:hello@GreeNest.com' },
                     { icon: Phone, label: 'Phone', value: '+91 99999 99999', href: 'tel:+919999999999' },
                   ].map(({ icon: Icon, label, value, href }) => (
                     <div key={label} className="flex items-start gap-4">
@@ -77,7 +77,7 @@ export default function ContactPage() {
 
                 {/* WhatsApp */}
                 <a
-                  href="https://wa.me/919999999999?text=Hello%20GreenNest%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
+                  href="https://wa.me/919999999999?text=Hello%20GreeNest%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 px-6 py-3.5 rounded-full bg-[#25D366] text-white font-bold text-sm hover:bg-[#20b858] transition-colors shadow-lg"
@@ -99,7 +99,7 @@ export default function ContactPage() {
         </section>
 
         {/* Map */}
-        <section className="pb-24 bg-white" aria-label="GreenNest location map">
+        <section className="pb-24 bg-white" aria-label="GreeNest location map">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="rounded-3xl overflow-hidden shadow-xl border border-gray-100 aspect-video">
               <iframe
@@ -110,7 +110,7 @@ export default function ContactPage() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Kanthalloor location — GreenNest"
+                title="Kanthalloor location — GreeNest"
               />
             </div>
           </div>
@@ -129,7 +129,7 @@ function ContactFormInline() {
 
   return (
     <form
-      action="mailto:hello@greennest.com"
+      action="mailto:hello@GreeNest.com"
       method="GET"
       className="space-y-5"
     >

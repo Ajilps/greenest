@@ -1,64 +1,64 @@
-import './globals.css';
-import { Inter, Playfair_Display } from 'next/font/google';
-import type { Metadata } from 'next';
-import WhatsAppFloat from '@/components/WhatsAppFloat';
+import "./globals.css";
+import { Inter, Playfair_Display } from "next/font/google";
+import type { Metadata } from "next";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
 const playfair = Playfair_Display({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--font-playfair',
-  display: 'swap',
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-playfair",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.greennest.com'),
+  metadataBase: new URL("https://www.GreeNest.com"),
   title: {
-    default: 'GreenNest – Where Nature Feels Like Home | Kanthalloor, Kerala',
-    template: '%s | GreenNest',
+    default: "GreeNest – Where Nature Feels Like Home | Kanthalloor, Kerala",
+    template: "%s | GreeNest",
   },
   description:
-    'GreenNest is a premium eco-friendly mountain homestay coming soon to Kanthalloor, Kerala. Join the waiting list, explore future experiences, and discover investment opportunities in sustainable tourism.',
+    "GreeNest is a premium eco-friendly mountain homestay coming soon to Kanthalloor, Kerala. Join the waiting list, explore future experiences, and discover investment opportunities in sustainable tourism.",
   keywords: [
-    'GreenNest',
-    'Kanthalloor homestay',
-    'eco-friendly resort Kerala',
-    'mountain retreat Kerala',
-    'Kanthalloor tourism',
-    'sustainable tourism Kerala',
-    'family resort Kerala',
-    'Kerala highlands',
-    'Idukki homestay',
-    'nature retreat India',
+    "GreeNest",
+    "Kanthalloor homestay",
+    "eco-friendly resort Kerala",
+    "mountain retreat Kerala",
+    "Kanthalloor tourism",
+    "sustainable tourism Kerala",
+    "family resort Kerala",
+    "Kerala highlands",
+    "Idukki homestay",
+    "nature retreat India",
   ],
   openGraph: {
-    title: 'GreenNest – Premium Eco Mountain Homestay | Kanthalloor Kerala',
+    title: "GreeNest – Premium Eco Mountain Homestay | Kanthalloor Kerala",
     description:
-      'A nature-inspired retreat with sunrise mountain views, fruit orchards, and homemade food. Coming soon to Kanthalloor.',
-    url: 'https://www.greennest.com',
-    siteName: 'GreenNest',
+      "A nature-inspired retreat with sunrise mountain views, fruit orchards, and homemade food. Coming soon to Kanthalloor.",
+    url: "https://www.GreeNest.com",
+    siteName: "GreeNest",
     images: [
       {
-        url: '/og-image.jpg',
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: 'GreenNest – Mountain homestay in Kanthalloor, Kerala',
+        alt: "GreeNest – Mountain homestay in Kanthalloor, Kerala",
       },
     ],
-    locale: 'en_IN',
-    type: 'website',
+    locale: "en_IN",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'GreenNest – Premium Eco-Friendly Mountain Homestay | Kerala',
+    card: "summary_large_image",
+    title: "GreeNest – Premium Eco-Friendly Mountain Homestay | Kerala",
     description:
-      'Discover sustainable luxury in Kanthalloor. Join the waiting list now.',
-    images: ['/og-image.jpg'],
+      "Discover sustainable luxury in Kanthalloor. Join the waiting list now.",
+    images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
@@ -66,50 +66,72 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   alternates: {
-    canonical: 'https://www.greennest.com',
+    canonical: "https://www.GreeNest.com",
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const jsonLd = {
-    '@context': 'https://schema.org',
-    '@graph': [
+    "@context": "https://schema.org",
+    "@graph": [
       {
-        '@type': 'Organization',
-        '@id': 'https://www.greennest.com/#organization',
-        name: 'GreenNest',
-        url: 'https://www.greennest.com',
-        description: 'Premium eco-friendly mountain homestay coming soon to Kanthalloor, Kerala, India.',
+        "@type": "Organization",
+        "@id": "https://www.GreeNest.com/#organization",
+        name: "GreeNest",
+        url: "https://www.GreeNest.com",
+        description:
+          "Premium eco-friendly mountain homestay coming soon to Kanthalloor, Kerala, India.",
         contactPoint: {
-          '@type': 'ContactPoint',
-          telephone: '+91-99999-99999',
-          contactType: 'customer service',
-          availableLanguage: ['English', 'Malayalam'],
+          "@type": "ContactPoint",
+          telephone: "+91-99999-99999",
+          contactType: "customer service",
+          availableLanguage: ["English", "Malayalam"],
         },
       },
       {
-        '@type': 'LodgingBusiness',
-        '@id': 'https://www.greennest.com/#lodging',
-        name: 'GreenNest',
-        description: 'Premium eco-friendly mountain homestay in Kanthalloor, Kerala.',
-        url: 'https://www.greennest.com',
+        "@type": "LodgingBusiness",
+        "@id": "https://www.GreeNest.com/#lodging",
+        name: "GreeNest",
+        description:
+          "Premium eco-friendly mountain homestay in Kanthalloor, Kerala.",
+        url: "https://www.GreeNest.com",
         address: {
-          '@type': 'PostalAddress',
-          addressLocality: 'Kanthalloor',
-          addressRegion: 'Kerala',
-          addressCountry: 'IN',
-          postalCode: '685619',
+          "@type": "PostalAddress",
+          addressLocality: "Kanthalloor",
+          addressRegion: "Kerala",
+          addressCountry: "IN",
+          postalCode: "685619",
         },
         geo: {
-          '@type': 'GeoCoordinates',
+          "@type": "GeoCoordinates",
           latitude: 10.28,
           longitude: 77.12,
         },
         amenityFeature: [
-          { '@type': 'LocationFeatureSpecification', name: 'Mountain Views', value: true },
-          { '@type': 'LocationFeatureSpecification', name: 'Eco-Friendly', value: true },
-          { '@type': 'LocationFeatureSpecification', name: 'Farm Experiences', value: true },
-          { '@type': 'LocationFeatureSpecification', name: 'Stargazing', value: true },
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Mountain Views",
+            value: true,
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Eco-Friendly",
+            value: true,
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Farm Experiences",
+            value: true,
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            name: "Stargazing",
+            value: true,
+          },
         ],
       },
     ],

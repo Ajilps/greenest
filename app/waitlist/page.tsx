@@ -5,16 +5,16 @@ import WaitlistForm from '@/components/WaitlistForm';
 import { Bell, Zap, Gift, CalendarCheck } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Join the Waiting List – GreenNest Mountain Homestay',
+  title: 'Join the Waiting List – GreeNest Mountain Homestay',
   description:
-    'Be among the first to experience GreenNest in Kanthalloor, Kerala. Join the waiting list for early access, launch updates, special offers, and priority reservations.',
+    'Be among the first to experience GreeNest in Kanthalloor, Kerala. Join the waiting list for early access, launch updates, special offers, and priority reservations.',
 };
 
 const benefits = [
   {
     icon: Bell,
     title: 'Launch Updates',
-    desc: 'Be the first to know when GreenNest opens. Get behind-the-scenes progress updates straight to your inbox.',
+    desc: 'Be the first to know when GreeNest opens. Get behind-the-scenes progress updates straight to your inbox.',
   },
   {
     icon: Zap,
@@ -46,7 +46,7 @@ export default function WaitlistPage() {
               Limited Spots Available
             </span>
             <h1 className="font-heading text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Be Among the First to Experience GreenNest
+              Be Among the First to Experience GreeNest
             </h1>
             <p className="text-white/65 text-lg leading-relaxed max-w-2xl mx-auto">
               Kanthalloor&rsquo;s most anticipated eco-retreat is coming. Join the waiting list today and
@@ -80,7 +80,7 @@ export default function WaitlistPage() {
                 <p className="text-xs uppercase tracking-widest text-secondary font-semibold mb-3">Register Your Interest</p>
                 <h2 className="font-heading text-4xl font-bold text-text mb-4">Join the Waiting List</h2>
                 <p className="text-gray-500 text-sm max-w-sm mx-auto">
-                  Takes less than 2 minutes. No spam — only meaningful updates about GreenNest.
+                  Takes less than 2 minutes. No spam — only meaningful updates about GreeNest.
                 </p>
               </div>
               <WaitlistForm />
