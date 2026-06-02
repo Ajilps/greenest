@@ -1,0 +1,17 @@
+{
+  "name": "GreenNest",
+  "short_name": "GreenNest",
+  "description": "Premium eco-friendly mountain homestay coming soon to Kanthalloor, Kerala",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F6F2",
+  "theme_color": "#2E5E4E",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
