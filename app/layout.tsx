@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter, Playfair_Display } from "next/font/google";
 import type { Metadata } from "next";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -149,6 +150,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased min-h-screen flex flex-col">
         {children}
+        <SpeedInsights />
         <WhatsAppFloat />
       </body>
     </html>
