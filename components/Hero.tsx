@@ -102,7 +102,7 @@ export default function Hero() {
             Join the Waiting List
           </Link>
           <a
-            href="https://wa.me/919999999999?text=Hello%20GreeNest%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
+            href="https://wa.me/919745648470?text=Hello%20GreeNest%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 rounded-full border-2 border-white/50 text-white font-bold text-sm hover:bg-white/10 hover:scale-105 transition-all duration-200 backdrop-blur-sm"

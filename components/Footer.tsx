@@ -13,7 +13,7 @@ export default function Footer() {
               Where Nature Feels Like Home. A future eco-friendly mountain homestay in Kanthalloor, Kerala.
             </p>
             <a
-              href="https://wa.me/919999999999?text=Hello%20GreeNest%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
+              href="https://wa.me/919745648470?text=Hello%20GreeNest%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366] text-white text-xs font-semibold hover:bg-[#20b858] transition-colors"
@@ -76,7 +76,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={14} />
-                <a href="tel:+919999999999" className="hover:text-white transition-colors">
+                <a href="tel:+919745648470" className="hover:text-white transition-colors">
                   +91 99999 99999
                 </a>
               </li>

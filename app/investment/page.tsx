@@ -195,7 +195,7 @@ export default function InvestmentPage() {
             <div className="mt-8 text-center">
               <p className="text-gray-500 text-sm mb-3">Prefer to talk directly?</p>
               <a
-                href="https://wa.me/919999999999?text=Hello%20GreeNest%20Team%2C%20I%20am%20interested%20in%20the%20investment%20opportunity."
+                href="https://wa.me/919745648470?text=Hello%20GreeNest%20Team%2C%20I%20am%20interested%20in%20the%20investment%20opportunity."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#25D366] text-white font-bold text-sm hover:bg-[#20b858] transition-colors"

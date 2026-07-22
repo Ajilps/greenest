@@ -43,7 +43,7 @@ export default function ContactPage() {
                   {[
                     { icon: MapPin, label: 'Location', value: 'Kanthalloor, Idukki District, Kerala 685 619, India' },
                     { icon: Mail, label: 'Email', value: 'hello@greenestco.in', href: 'mailto:hello@greenestco.in' },
-                    { icon: Phone, label: 'Phone', value: '+91 99999 99999', href: 'tel:+919999999999' },
+                    { icon: Phone, label: 'Phone', value: '+91 99999 99999', href: 'tel:+919745648470' },
                   ].map(({ icon: Icon, label, value, href }) => (
                     <div key={label} className="flex items-start gap-4">
                       <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
@@ -77,7 +77,7 @@ export default function ContactPage() {
 
                 {/* WhatsApp */}
                 <a
-                  href="https://wa.me/919999999999?text=Hello%20GreeNest%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
+                  href="https://wa.me/919745648470?text=Hello%20GreeNest%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 px-6 py-3.5 rounded-full bg-[#25D366] text-white font-bold text-sm hover:bg-[#20b858] transition-colors shadow-lg"
