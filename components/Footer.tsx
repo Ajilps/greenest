@@ -70,8 +70,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={14} />
-                <a href="mailto:hello@GreeNest.com" className="hover:text-white transition-colors">
-                  hello@GreeNest.com
+                <a href="mailto:hello@greenestco.in" className="hover:text-white transition-colors">
+                  hello@greenestco.in
                 </a>
               </li>
               <li className="flex items-center gap-2">

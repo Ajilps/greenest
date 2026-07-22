@@ -42,7 +42,7 @@ export default function ContactPage() {
                 <div className="space-y-6 mb-10">
                   {[
                     { icon: MapPin, label: 'Location', value: 'Kanthalloor, Idukki District, Kerala 685 619, India' },
-                    { icon: Mail, label: 'Email', value: 'hello@GreeNest.com', href: 'mailto:hello@GreeNest.com' },
+                    { icon: Mail, label: 'Email', value: 'hello@greenestco.in', href: 'mailto:hello@greenestco.in' },
                     { icon: Phone, label: 'Phone', value: '+91 99999 99999', href: 'tel:+919999999999' },
                   ].map(({ icon: Icon, label, value, href }) => (
                     <div key={label} className="flex items-start gap-4">
@@ -129,7 +129,7 @@ function ContactFormInline() {
 
   return (
     <form
-      action="mailto:hello@GreeNest.com"
+      action="mailto:hello@greenestco.in"
       method="GET"
       className="space-y-5"
     >

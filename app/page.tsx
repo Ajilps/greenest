@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   title: 'GreeNest – Where Nature Feels Like Home | Kanthalloor, Kerala',
   description:
     'GreeNest is a premium eco-friendly mountain homestay coming soon to Kanthalloor, Kerala. Join the waiting list, explore future experiences, and discover investment opportunities in sustainable tourism.',
-  alternates: { canonical: 'https://www.GreeNest.com' },
+  alternates: { canonical: 'https://www.greenestco.in' },
 };
 
 const experiences = [

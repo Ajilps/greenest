@@ -17,7 +17,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.GreeNest.com"),
+  metadataBase: new URL("https://www.greenestco.in"),
   title: {
     default: "GreeNest – Where Nature Feels Like Home | Kanthalloor, Kerala",
     template: "%s | GreeNest",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "GreeNest – Premium Eco Mountain Homestay | Kanthalloor Kerala",
     description:
       "A nature-inspired retreat with sunrise mountain views, fruit orchards, and homemade food. Coming soon to Kanthalloor.",
-    url: "https://www.GreeNest.com",
+    url: "https://www.greenestco.in",
     siteName: "GreeNest",
     images: [
       {
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   alternates: {
-    canonical: "https://www.GreeNest.com",
+    canonical: "https://www.greenestco.in",
   },
 };
 
@@ -80,9 +80,9 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://www.GreeNest.com/#organization",
+        "@id": "https://www.greenestco.in/#organization",
         name: "GreeNest",
-        url: "https://www.GreeNest.com",
+        url: "https://www.greenestco.in",
         description:
           "Premium eco-friendly mountain homestay coming soon to Kanthalloor, Kerala, India.",
         contactPoint: {
@@ -94,11 +94,11 @@ export default function RootLayout({
       },
       {
         "@type": "LodgingBusiness",
-        "@id": "https://www.GreeNest.com/#lodging",
+        "@id": "https://www.greenestco.in/#lodging",
         name: "GreeNest",
         description:
           "Premium eco-friendly mountain homestay in Kanthalloor, Kerala.",
-        url: "https://www.GreeNest.com",
+        url: "https://www.greenestco.in",
         address: {
           "@type": "PostalAddress",
           addressLocality: "Kanthalloor",
