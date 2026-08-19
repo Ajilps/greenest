@@ -56,7 +56,7 @@ Kanthalloor is approximately 35 km from Munnar (about 1.5 hours by road) and aro
 
 ---
 
-*GreeNest is a future eco-friendly mountain homestay coming soon to Kanthalloor. Join our waiting list to be the first to experience it.*
+*greenest is a future eco-friendly mountain homestay coming soon to Kanthalloor. Join our waiting list to be the first to experience it.*
     `,
   },
   'kanthalloor-vs-munnar': {
@@ -96,7 +96,7 @@ If this is your first trip to the Kerala highlands, Munnar is a safe and rewardi
 
 ---
 
-*GreeNest is building a premium eco-friendly homestay in Kanthalloor — designed specifically for travellers who want more than a standard mountain holiday.*
+*greenest is building a premium eco-friendly homestay in Kanthalloor — designed specifically for travellers who want more than a standard mountain holiday.*
     `,
   },
   'why-eco-tourism-matters': {
@@ -126,9 +126,9 @@ India's tourism sector is booming. Kerala alone saw over 15 million visitors in 
 
 The Western Ghats are a UNESCO World Heritage Site — one of the world's eight biodiversity hotspots. They deserve tourism that enhances rather than extracts.
 
-## The GreeNest Approach
+## The greenest Approach
 
-At GreeNest, sustainability is not a marketing strategy. It is a founding principle. Our upcoming Kanthalloor homestay is being designed with:
+At greenest, sustainability is not a marketing strategy. It is a founding principle. Our upcoming Kanthalloor homestay is being designed with:
 
 - Locally sourced construction materials wherever possible
 - Solar energy and rainwater harvesting
@@ -140,7 +140,7 @@ We believe that luxury and responsibility are not opposites. The most meaningful
 
 ---
 
-*GreeNest is coming soon to Kanthalloor, Kerala. Join the waiting list to be part of sustainable tourism done right.*
+*greenest is coming soon to Kanthalloor, Kerala. Join the waiting list to be part of sustainable tourism done right.*
     `,
   },
 };
@@ -148,7 +148,7 @@ We believe that luxury and responsibility are not opposites. The most meaningful
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = posts[slug];
-  if (!post) return { title: 'Blog | GreeNest' };
+  if (!post) return { title: 'Blog | greenest' };
   return {
     title: post.title,
     description: post.content.slice(0, 160).replace(/[#\n]/g, ' ').trim(),
@@ -207,7 +207,7 @@ export default async function BlogPost({ params }: Props) {
               <span>&bull;</span>
               <span>{post.readTime}</span>
               <span>&bull;</span>
-              <span>GreeNest Blog</span>
+              <span>greenest Blog</span>
             </div>
           </div>
         </section>
@@ -248,7 +248,7 @@ export default async function BlogPost({ params }: Props) {
             {/* CTA */}
             <div className="mt-16 p-8 rounded-2xl bg-[#F7F6F2] border border-gray-100 text-center">
               <p className="font-heading text-xl font-bold text-text mb-3">
-                Experience Kanthalloor with GreeNest
+                Experience Kanthalloor with greenest
               </p>
               <p className="text-gray-500 text-sm mb-6">
                 Join the waiting list and be among the first to stay at our upcoming eco-friendly mountain homestay.

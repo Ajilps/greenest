@@ -43,7 +43,7 @@ export default function WaitlistForm() {
         </div>
         <h3 className="font-heading text-2xl font-bold text-text">You&rsquo;re on the list!</h3>
         <p className="text-gray-500 text-sm max-w-sm leading-relaxed">
-          Thank you for joining the GreeNest waiting list. We&rsquo;ll keep you updated on our progress
+          Thank you for joining the greenest waiting list. We&rsquo;ll keep you updated on our progress
           and send you early access details before anyone else.
         </p>
       </div>
@@ -99,7 +99,7 @@ export default function WaitlistForm() {
         <textarea
           id="wl-message"
           rows={3}
-          placeholder="Tell us about your dream stay at GreeNest..."
+          placeholder="Tell us about your dream stay at greenest..."
           {...register('message')}
           className={inputClass + ' resize-none'}
         />

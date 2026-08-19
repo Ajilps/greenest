@@ -5,9 +5,9 @@ import InvestorForm from '@/components/InvestorForm';
 import { TrendingUp, MapPin, Leaf, Users } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Invest in GreeNest – Sustainable Mountain Tourism | Kanthalloor Kerala',
+  title: 'Invest in greenest – Sustainable Mountain Tourism | Kanthalloor Kerala',
   description:
-    'Invest in GreeNest, a premium eco-friendly mountain homestay coming to Kanthalloor, Kerala. Explore the opportunity in sustainable tourism, projected growth, and partnership models.',
+    'Invest in greenest, a premium eco-friendly mountain homestay coming to Kanthalloor, Kerala. Explore the opportunity in sustainable tourism, projected growth, and partnership models.',
 };
 
 const whyInvest = [
@@ -19,17 +19,17 @@ const whyInvest = [
   {
     icon: MapPin,
     title: 'Prime Location Advantage',
-    desc: 'Kanthalloor is an emerging destination with limited quality accommodation options. GreeNest is positioned to capture the early-mover advantage in this undiscovered market.',
+    desc: 'Kanthalloor is an emerging destination with limited quality accommodation options. greenest is positioned to capture the early-mover advantage in this undiscovered market.',
   },
   {
     icon: Leaf,
     title: 'Sustainable = Premium',
-    desc: 'Eco-conscious travellers consistently pay a premium for authentic, sustainable stays. GreeNest\'s model targets this high-value, high-intent segment.',
+    desc: 'Eco-conscious travellers consistently pay a premium for authentic, sustainable stays. greenest\'s model targets this high-value, high-intent segment.',
   },
   {
     icon: Users,
     title: 'Family & Group Focus',
-    desc: 'Families and groups have longer stays, higher spending, and stronger repeat rates. GreeNest is purpose-built for this lucrative, underserved audience.',
+    desc: 'Families and groups have longer stays, higher spending, and stronger repeat rates. greenest is purpose-built for this lucrative, underserved audience.',
   },
 ];
 
@@ -46,7 +46,7 @@ export default function InvestmentPage() {
               Invest in the Future of Sustainable Mountain Tourism
             </h1>
             <p className="text-white/65 text-lg leading-relaxed max-w-2xl mx-auto">
-              GreeNest represents a rare opportunity to invest in a premium, eco-focused hospitality
+              greenest represents a rare opportunity to invest in a premium, eco-focused hospitality
               project in one of Kerala&rsquo;s most promising emerging destinations.
             </p>
           </div>
@@ -60,7 +60,7 @@ export default function InvestmentPage() {
                 <p className="text-xs uppercase tracking-widest text-secondary font-semibold mb-4">The Project</p>
                 <h2 className="font-heading text-4xl font-bold text-text mb-6">Project Overview</h2>
                 <p className="text-gray-600 leading-relaxed mb-5">
-                  GreeNest is a carefully planned eco-friendly mountain homestay being developed in
+                  greenest is a carefully planned eco-friendly mountain homestay being developed in
                   Kanthalloor, Idukki District, Kerala. The project involves acquiring and developing
                   land into a boutique retreat designed for families and small groups.
                 </p>
@@ -94,11 +94,11 @@ export default function InvestmentPage() {
         </section>
 
         {/* Why Invest */}
-        <section className="py-24 bg-[#F7F6F2]" aria-label="Why invest in GreeNest">
+        <section className="py-24 bg-[#F7F6F2]" aria-label="Why invest in greenest">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <p className="text-xs uppercase tracking-widest text-secondary font-semibold mb-3">The Opportunity</p>
-              <h2 className="font-heading text-4xl font-bold text-text mb-5">Why GreeNest? Why Now?</h2>
+              <h2 className="font-heading text-4xl font-bold text-text mb-5">Why greenest? Why Now?</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
                 The convergence of rising eco-tourism demand, an undiscovered destination, and a thoughtful
                 concept creates a compelling investment case.
@@ -184,7 +184,7 @@ export default function InvestmentPage() {
                 <p className="text-xs uppercase tracking-widest text-secondary font-semibold mb-3">Get in Touch</p>
                 <h2 className="font-heading text-4xl font-bold text-text mb-4">Request the Investment Deck</h2>
                 <p className="text-gray-500 text-sm max-w-md mx-auto">
-                  Fill in your details and we&rsquo;ll send you the full GreeNest investment deck along with
+                  Fill in your details and we&rsquo;ll send you the full greenest investment deck along with
                   financial projections and partnership terms.
                 </p>
               </div>
@@ -195,7 +195,7 @@ export default function InvestmentPage() {
             <div className="mt-8 text-center">
               <p className="text-gray-500 text-sm mb-3">Prefer to talk directly?</p>
               <a
-                href="https://wa.me/919745648470?text=Hello%20GreeNest%20Team%2C%20I%20am%20interested%20in%20the%20investment%20opportunity."
+                href="https://wa.me/916282077926?text=Hello%20greenest%20team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#25D366] text-white font-bold text-sm hover:bg-[#20b858] transition-colors"

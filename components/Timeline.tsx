@@ -20,7 +20,7 @@ const phases = [
   },
   {
     label: 'Construction',
-    status: 'upcoming' as const,
+    status: 'active' as const,
     description: 'Building eco-friendly structures with locally sourced materials and minimal footprint.',
   },
   {
@@ -43,7 +43,7 @@ export default function Timeline() {
           <p className="text-xs uppercase tracking-widest text-secondary font-semibold mb-3">Progress</p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold text-text">Project Milestones</h2>
           <p className="mt-4 text-gray-500 text-base max-w-xl mx-auto">
-            GreeNest is actively progressing. Here&rsquo;s where we stand today.
+            greenest is actively progressing. Here&rsquo;s where we stand today.
           </p>
         </motion.div>
 

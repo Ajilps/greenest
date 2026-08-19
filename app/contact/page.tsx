@@ -4,9 +4,18 @@ import Footer from '@/components/Footer';
 import { Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Contact GreeNest – Get in Touch',
+  title: 'Contact greenest – Get in Touch',
   description:
-    'Contact the GreeNest team. Send us a message, find our location in Kanthalloor Kerala, or chat with us on WhatsApp.',
+    'Contact the greenest team. Send us a message, find our location in Kanthalloor Kerala, or chat with us on WhatsApp.',
+  keywords: [
+    'greenest contact',
+    'Kanthalloor homestay contact',
+    'Kanthalloor resort enquiry',
+    'greenest Kanthalloor phone number',
+    'greenest Kanthalloor email',
+    'Kanthalloor stay enquiry',
+  ],
+  alternates: { canonical: 'https://greenestco.in/contact' },
 };
 
 export default function ContactPage() {
@@ -15,12 +24,12 @@ export default function ContactPage() {
       <Navbar />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20 bg-gradient-to-br from-[#0f2a1e] via-[#2E5E4E] to-[#4F8A63]">
+        <section className="page-hero page-hero--contact pt-40 pb-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-xs uppercase tracking-widest text-[#86efac] font-semibold mb-4">Say Hello</p>
-            <h1 className="font-heading text-5xl lg:text-6xl font-bold text-white mb-6">Contact GreeNest</h1>
+            <h1 className="font-heading text-5xl lg:text-6xl font-bold text-white mb-6">Contact greenest</h1>
             <p className="text-white/65 text-lg leading-relaxed max-w-xl mx-auto">
-              Have a question, want to invest, or just curious about the project? We&rsquo;d love to hear from you.
+              Have a question or simply curious about the project? We&rsquo;d love to hear from you.
             </p>
           </div>
         </section>
@@ -35,15 +44,15 @@ export default function ContactPage() {
                 <p className="text-xs uppercase tracking-widest text-secondary font-semibold mb-4">Get in Touch</p>
                 <h2 className="font-heading text-4xl font-bold text-text mb-6">We&rsquo;re Here to Help</h2>
                 <p className="text-gray-600 leading-relaxed mb-10">
-                  Whether you&rsquo;re a future guest, an investor, or simply someone who loves the idea of
-                  GreeNest — reach out and let&rsquo;s talk. We respond to every message personally.
+                  Whether you&rsquo;re a future guest or simply someone who loves the idea of
+                  greenest — reach out and let&rsquo;s talk. We respond to every message personally.
                 </p>
 
                 <div className="space-y-6 mb-10">
                   {[
                     { icon: MapPin, label: 'Location', value: 'Kanthalloor, Idukki District, Kerala 685 619, India' },
-                    { icon: Mail, label: 'Email', value: 'hello@greenestco.in', href: 'mailto:hello@greenestco.in' },
-                    { icon: Phone, label: 'Phone', value: '+91 99999 99999', href: 'tel:+919745648470' },
+                    { icon: Mail, label: 'Email', value: 'greenest5000@gmail.com', href: 'mailto:greenest5000@gmail.com' },
+                    { icon: Phone, label: 'Phone', value: '+91 62820 77926', href: 'tel:+916282077926' },
                   ].map(({ icon: Icon, label, value, href }) => (
                     <div key={label} className="flex items-start gap-4">
                       <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
@@ -68,16 +77,16 @@ export default function ContactPage() {
                   <p className="text-xs uppercase tracking-widest text-secondary font-semibold mb-2">Project Status</p>
                   <div className="flex items-center gap-2 mb-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse" />
-                    <span className="font-heading text-lg font-bold text-text">Planning Phase</span>
+                    <span className="font-heading text-lg font-bold text-text">Planning &amp; Construction</span>
                   </div>
                   <p className="text-sm text-gray-500">
-                    Land acquired in Kanthalloor. Architectural planning underway. Expected construction to begin soon.
+                    Land acquired in Kanthalloor. Architectural planning and construction preparation are underway.
                   </p>
                 </div>
 
                 {/* WhatsApp */}
                 <a
-                  href="https://wa.me/919745648470?text=Hello%20GreeNest%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
+                  href="https://wa.me/916282077926?text=Hello%20greenest%20team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 px-6 py-3.5 rounded-full bg-[#25D366] text-white font-bold text-sm hover:bg-[#20b858] transition-colors shadow-lg"
@@ -99,7 +108,7 @@ export default function ContactPage() {
         </section>
 
         {/* Map */}
-        <section className="pb-24 bg-white" aria-label="GreeNest location map">
+        <section className="pb-24 bg-white" aria-label="greenest location map">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="rounded-3xl overflow-hidden shadow-xl border border-gray-100 aspect-video">
               <iframe
@@ -110,7 +119,7 @@ export default function ContactPage() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Kanthalloor location — GreeNest"
+                title="Kanthalloor location — greenest"
               />
             </div>
           </div>
@@ -129,7 +138,7 @@ function ContactFormInline() {
 
   return (
     <form
-      action="mailto:hello@greenestco.in"
+      action="mailto:greenest5000@gmail.com"
       method="GET"
       className="space-y-5"
     >

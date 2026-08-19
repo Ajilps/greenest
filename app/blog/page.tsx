@@ -4,9 +4,9 @@ import Footer from '@/components/Footer';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Blog – Travel Guides, Kerala & Eco-Tourism | GreeNest',
+  title: 'Blog – Travel Guides, Kerala & Eco-Tourism | greenest',
   description:
-    'Read GreeNest blog posts about Kanthalloor travel, Kerala highland adventures, eco-tourism, and sustainable mountain living.',
+    'Read greenest blog posts about Kanthalloor travel, Kerala highland adventures, eco-tourism, and sustainable mountain living.',
 };
 
 const posts = [
@@ -85,9 +85,9 @@ export default function BlogPage() {
         <section className="pt-32 pb-20 bg-gradient-to-br from-[#0f2a1e] via-[#2E5E4E] to-[#4F8A63]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-xs uppercase tracking-widest text-[#86efac] font-semibold mb-4">Stories & Guides</p>
-            <h1 className="font-heading text-5xl lg:text-6xl font-bold text-white mb-6">GreeNest Blog</h1>
+            <h1 className="font-heading text-5xl lg:text-6xl font-bold text-white mb-6">greenest Blog</h1>
             <p className="text-white/65 text-lg leading-relaxed max-w-xl mx-auto">
-              Travel guides, Kanthalloor stories, eco-tourism insights, and behind-the-scenes updates from the GreeNest journey.
+              Travel guides, Kanthalloor stories, eco-tourism insights, and behind-the-scenes updates from the greenest journey.
             </p>
           </div>
         </section>

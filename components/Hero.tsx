@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      aria-label="GreeNest hero section"
+      aria-label="greenest hero section"
     >
       {/* Rich gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0f2a1e] via-[#1a3d2e] to-[#2E5E4E]" />
@@ -102,7 +102,7 @@ export default function Hero() {
             Join the Waiting List
           </Link>
           <a
-            href="https://wa.me/919745648470?text=Hello%20GreeNest%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
+            href="https://wa.me/916282077926?text=Hello%20greenest%20team%2C%20I%20would%20like%20to%20know%20more%20about%20the%20project."
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 rounded-full border-2 border-white/50 text-white font-bold text-sm hover:bg-white/10 hover:scale-105 transition-all duration-200 backdrop-blur-sm"

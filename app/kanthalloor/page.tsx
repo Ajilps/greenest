@@ -5,11 +5,31 @@ import FAQ from '@/components/FAQ';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Kanthalloor Travel Guide – Kerala Highlands | GreeNest',
+  title: 'Kanthalloor Travel Guide – Kerala Highlands | greenest',
   description:
     'Discover what makes Kanthalloor, Kerala special — apple orchards, strawberry farms, high-range climate, mountain views, and eco-tourism. Your complete travel guide to Kanthalloor.',
-  keywords:
-    'Kanthalloor, Kanthalloor Kerala, Kanthalloor travel guide, Kanthalloor apple orchards, Kanthalloor strawberry farm, Kerala highlands, Kerala mountain tourism, Kanthalloor Munnar, Idukki Kerala',
+  keywords: [
+    'Kanthalloor',
+    'Kanthalloor Kerala',
+    'Kanthalloor travel guide',
+    'places to visit in Kanthalloor',
+    'things to do in Kanthalloor',
+    'Kanthalloor apple orchards',
+    'Kanthalloor strawberry farm',
+    'Kanthalloor weather',
+    'best time to visit Kanthalloor',
+    'Kanthalloor accommodation',
+    'Kanthalloor homestay',
+    'Kanthalloor resort',
+    'Kanthalloor to Munnar',
+    'Kanthalloor near Munnar',
+    'Marayoor Kanthalloor tourism',
+    'Kerala highlands',
+    'Idukki hill station',
+    'Western Ghats Kerala travel',
+    'quiet hill stations in Kerala',
+  ],
+  alternates: { canonical: 'https://greenestco.in/kanthalloor' },
 };
 
 const faqItems = [
@@ -84,7 +104,7 @@ export default function KanthalloorPage() {
       <Navbar />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20 bg-gradient-to-br from-[#0f2a1e] via-[#2E5E4E] to-[#4F8A63]">
+        <section className="page-hero page-hero--kanthalloor pt-40 pb-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-xs uppercase tracking-widest text-[#86efac] font-semibold mb-4">Kerala Highlands</p>
             <h1 className="font-heading text-5xl lg:text-6xl font-bold text-white mb-6">Why Kanthalloor?</h1>
@@ -218,9 +238,9 @@ export default function KanthalloorPage() {
         {/* CTA */}
         <section className="py-20 bg-primary text-white text-center">
           <div className="max-w-2xl mx-auto px-4">
-            <h2 className="font-heading text-4xl font-bold mb-4">Experience Kanthalloor with GreeNest</h2>
+            <h2 className="font-heading text-4xl font-bold mb-4">Experience Kanthalloor with greenest</h2>
             <p className="text-white/65 mb-8">
-              Join our waiting list to be the first to experience GreeNest — right in the heart of Kanthalloor.
+              Join our waiting list to be the first to experience greenest — right in the heart of Kanthalloor.
             </p>
             <Link
               href="/waitlist"

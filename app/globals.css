@@ -1,12 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand Colors */
-  --color-primary: #2E5E4E;
-  --color-secondary: #4F8A63;
-  --color-accent: #8B6A4E;
-  --color-background: #F7F6F2;
-  --color-text: #2A2A2A;
+  --color-primary: #29452f;
+  --color-secondary: #617c5f;
+  --color-accent: #cf6f49;
+  --color-background: #f3f0e8;
+  --color-text: #213325;
 
   /* Typography — references Next.js font CSS variables */
   --font-heading: var(--font-playfair), Georgia, serif;
@@ -17,25 +16,562 @@
 /* Default body font */
 html {
   font-family: var(--font-body);
-  background-color: #F7F6F2;
-  color: #2A2A2A;
+  background-color: #f3f0e8;
+  color: #213325;
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+  background: #f3f0e8;
+  text-rendering: optimizeLegibility;
+}
+
 /* Headings use Playfair Display */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
 }
 
 /* Accessible focus ring */
 :focus-visible {
-  outline: 2px solid #8B6A4E;
+  outline: 2px solid #cf6f49;
   outline-offset: 3px;
 }
 
 /* Smooth transitions on interactive elements */
-a, button {
-  transition-property: color, background-color, border-color, transform, box-shadow, opacity;
+a,
+button {
+  transition-property:
+    color, background-color, border-color, transform, box-shadow, opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
+}
+
+::selection {
+  background: #cf6f49;
+  color: #fff8ef;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  min-height: 3.25rem;
+  border-radius: 999px;
+  padding: 0.85rem 1.4rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 16px 36px rgba(20, 33, 23, 0.13);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 44px rgba(20, 33, 23, 0.2);
+}
+
+.button-light {
+  background: #f4f0e7;
+  color: #203526;
+}
+
+.button-light:hover {
+  background: #ffffff;
+}
+
+.button-ghost {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.button-ghost:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid currentColor;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.text-link:hover {
+  gap: 0.8rem;
+  opacity: 0.72;
+}
+
+.image-shadow {
+  box-shadow:
+    0 34px 75px rgba(30, 49, 34, 0.22),
+    0 5px 16px rgba(30, 49, 34, 0.08);
+}
+
+/* Condensed, fogged glass treatment for the floating navigation. */
+.frosted-fog-nav {
+  isolation: isolate;
+  border: 0;
+  background: linear-gradient(135deg, #f1f6f147, #7a897c2e 48%, #eef3ed3d);
+  box-shadow:
+    inset 0 0px #ffffffb8,
+    inset 0 -1px #ffffff1f,
+    0 18px 50px #10181133,
+    0 4px 14px #1018111a;
+  -webkit-backdrop-filter: blur(24px) saturate(125%);
+  backdrop-filter: blur(6px) saturate(200%);
+}
+
+.frosted-fog-nav--dark {
+  background: linear-gradient(135deg, #e2eae245, #49544c75 48%, #d7e0d736);
+  text-shadow: 0 1px 18px #08110a42;
+}
+
+.frosted-fog-nav::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -55% -15%;
+  background:
+    radial-gradient(
+      ellipse at 14% 55%,
+      rgba(255, 255, 255, 0.68) 0 8%,
+      transparent 24%
+    ),
+    radial-gradient(
+      ellipse at 48% 44%,
+      rgba(232, 239, 231, 0.52) 0 12%,
+      transparent 30%
+    ),
+    radial-gradient(
+      ellipse at 78% 60%,
+      rgba(255, 255, 255, 0.56) 0 10%,
+      transparent 27%
+    ),
+    radial-gradient(
+      ellipse at 96% 40%,
+      rgba(220, 231, 221, 0.46) 0 9%,
+      transparent 24%
+    );
+  filter: blur(12px);
+  opacity: 0.82;
+  animation: nav-fog-drift 12s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.frosted-fog-nav::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 8% 22%,
+      rgba(255, 255, 255, 0.55) 0 1px,
+      transparent 2.2px
+    ),
+    radial-gradient(
+      circle at 18% 72%,
+      rgba(255, 255, 255, 0.42) 0 1.5px,
+      transparent 2.8px
+    ),
+    radial-gradient(
+      circle at 37% 18%,
+      rgba(255, 255, 255, 0.38) 0 1px,
+      transparent 2.1px
+    ),
+    radial-gradient(
+      circle at 61% 77%,
+      rgba(255, 255, 255, 0.44) 0 1.3px,
+      transparent 2.5px
+    ),
+    radial-gradient(
+      circle at 83% 27%,
+      rgba(255, 255, 255, 0.48) 0 1.4px,
+      transparent 2.6px
+    ),
+    linear-gradient(
+      110deg,
+      rgba(255, 255, 255, 0.18),
+      transparent 28%,
+      transparent 72%,
+      rgba(255, 255, 255, 0.12)
+    );
+  opacity: 0.78;
+  pointer-events: none;
+}
+
+.frosted-fog-nav > :not(.nav-weather) {
+  position: relative;
+  z-index: 2;
+}
+
+/* Dark frosted glass continuation for the global footer. */
+.frosted-fog-footer {
+  isolation: isolate;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(28, 52, 36, 0.99),
+      rgba(35, 60, 43, 0.98) 48%,
+      rgba(17, 36, 24, 0.99)
+    ),
+    #17261b;
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.34),
+    inset 0 18px 48px rgba(236, 245, 235, 0.06),
+    0 -16px 42px rgba(27, 48, 33, 0.16);
+  -webkit-backdrop-filter: blur(24px) saturate(125%);
+  backdrop-filter: blur(18px) saturate(150%);
+  text-shadow: 0 1px 12px rgba(8, 17, 10, 0.2);
+}
+
+.frosted-fog-footer::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: -18% -8%;
+  background:
+    radial-gradient(
+      ellipse at 8% 20%,
+      rgba(238, 246, 237, 0.24) 0 9%,
+      transparent 30%
+    ),
+    radial-gradient(
+      ellipse at 38% 68%,
+      rgba(196, 213, 198, 0.16) 0 13%,
+      transparent 35%
+    ),
+    radial-gradient(
+      ellipse at 72% 26%,
+      rgba(240, 246, 239, 0.18) 0 11%,
+      transparent 32%
+    ),
+    radial-gradient(
+      ellipse at 96% 78%,
+      rgba(178, 198, 181, 0.14) 0 12%,
+      transparent 32%
+    );
+  filter: blur(26px);
+  opacity: 0.58;
+  pointer-events: none;
+  animation: nav-fog-drift 16s ease-in-out infinite alternate;
+}
+
+.frosted-fog-footer::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 7% 14%,
+      rgba(255, 255, 255, 0.42) 0 1px,
+      transparent 2.5px
+    ),
+    radial-gradient(
+      circle at 17% 62%,
+      rgba(255, 255, 255, 0.3) 0 1.5px,
+      transparent 3px
+    ),
+    radial-gradient(
+      circle at 34% 25%,
+      rgba(255, 255, 255, 0.28) 0 1px,
+      transparent 2.4px
+    ),
+    radial-gradient(
+      circle at 58% 74%,
+      rgba(255, 255, 255, 0.32) 0 1.4px,
+      transparent 2.8px
+    ),
+    radial-gradient(
+      circle at 79% 18%,
+      rgba(255, 255, 255, 0.34) 0 1.3px,
+      transparent 2.7px
+    ),
+    radial-gradient(
+      circle at 93% 66%,
+      rgba(255, 255, 255, 0.3) 0 1.5px,
+      transparent 3px
+    ),
+    linear-gradient(
+      112deg,
+      rgba(255, 255, 255, 0.09),
+      transparent 30%,
+      transparent 72%,
+      rgba(255, 255, 255, 0.06)
+    );
+  opacity: 0.36;
+  pointer-events: none;
+}
+
+.frosted-fog-footer > * {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-content-panel {
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  background: linear-gradient(135deg, rgba(11, 31, 18, 0.48), rgba(28, 50, 35, 0.28));
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.12),
+    0 24px 60px rgba(6, 18, 10, 0.18);
+  -webkit-backdrop-filter: blur(8px) saturate(130%);
+  backdrop-filter: blur(8px) saturate(130%);
+}
+
+.footer-brand-glass {
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  background: linear-gradient(135deg, rgba(244, 249, 242, 0.92), rgba(208, 222, 209, 0.74) 52%, rgba(239, 246, 237, 0.86));
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.9),
+    inset 0 -1px rgba(255, 255, 255, 0.22),
+    0 18px 42px rgba(5, 16, 8, 0.24);
+  -webkit-backdrop-filter: blur(18px) saturate(145%);
+  backdrop-filter: blur(18px) saturate(145%);
+}
+
+.footer-brand-glass:focus-visible {
+  outline-color: #dce8bf;
+}
+
+.nav-weather {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.nav-drop {
+  position: absolute;
+  top: -14px;
+  width: 7px;
+  height: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 58% 42% 62% 38% / 48% 50% 50% 52%;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.76),
+    rgba(214, 229, 219, 0.18) 58%,
+    rgba(81, 107, 88, 0.28)
+  );
+  box-shadow:
+    inset 1px 1px 2px rgba(255, 255, 255, 0.76),
+    0 1px 3px rgba(11, 28, 16, 0.24);
+  opacity: 0;
+  animation: nav-water-drip 8s cubic-bezier(0.48, 0.05, 0.68, 0.95) infinite;
+}
+
+.nav-drop::after {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  width: 1px;
+  height: 17px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.28)
+  );
+}
+
+.nav-drop:nth-child(1) {
+  left: 8%;
+  animation-delay: -1.8s;
+  animation-duration: 8.4s;
+}
+.nav-drop:nth-child(2) {
+  left: 22%;
+  animation-delay: -5.1s;
+  animation-duration: 10.2s;
+  transform: scale(0.72);
+}
+.nav-drop:nth-child(3) {
+  left: 39%;
+  animation-delay: -3.3s;
+  animation-duration: 9.1s;
+  transform: scale(1.15);
+}
+.nav-drop:nth-child(4) {
+  left: 55%;
+  animation-delay: -7.2s;
+  animation-duration: 11.3s;
+  transform: scale(0.65);
+}
+.nav-drop:nth-child(5) {
+  left: 69%;
+  animation-delay: -2.4s;
+  animation-duration: 8.9s;
+}
+.nav-drop:nth-child(6) {
+  left: 82%;
+  animation-delay: -6.3s;
+  animation-duration: 10.7s;
+  transform: scale(0.8);
+}
+.nav-drop:nth-child(7) {
+  left: 94%;
+  animation-delay: -4.4s;
+  animation-duration: 9.6s;
+  transform: scale(1.08);
+}
+
+@keyframes nav-fog-drift {
+  0% {
+    transform: translate3d(-2.5%, 0, 0) scale(1.02);
+  }
+  50% {
+    transform: translate3d(2%, -2%, 0) scale(1.08);
+  }
+  100% {
+    transform: translate3d(5%, 1%, 0) scale(1.03);
+  }
+}
+
+@keyframes nav-water-drip {
+  0%,
+  20% {
+    translate: 0 0;
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.72;
+  }
+  72% {
+    opacity: 0.58;
+  }
+  100% {
+    translate: 0 98px;
+    opacity: 0;
+  }
+}
+
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(13, 26, 16, 0.38),
+    rgba(13, 26, 16, 0.76)
+  );
+}
+
+.page-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero--about {
+  background-image: url("/images/greenest-interior.png");
+}
+
+.page-hero--kanthalloor {
+  background-image: url("/images/kanthalloor-tea-estate.jpg");
+}
+
+.page-hero--contact {
+  background-image: url("/images/mountain-view-garden.jpg");
+}
+
+.page-hero--waitlist {
+  background-image: url("/images/fireplace-retreat.jpg");
+}
+
+.experience-card {
+  transform-style: preserve-3d;
+}
+
+.experience-card > * {
+  transform: translateZ(18px);
+}
+
+@media (max-width: 640px) {
+  .hero-shell {
+    min-height: max(100svh, 700px);
+  }
+
+  .button {
+    min-height: 3.5rem;
+    padding-inline: 1.15rem;
+  }
+
+  .button:active {
+    transform: scale(0.985);
+  }
+
+  .page-hero {
+    display: flex;
+    min-height: 34rem;
+    align-items: flex-end;
+    padding-top: 9rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2.8rem, 13vw, 4rem);
+    line-height: 0.98;
+  }
+
+  .page-hero p {
+    line-height: 1.65;
+  }
+
+  .experience-card > * {
+    transform: none;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .button:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

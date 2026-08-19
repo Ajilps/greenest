@@ -43,7 +43,7 @@ export default function InvestorForm() {
         </div>
         <h3 className="font-heading text-2xl font-bold text-text">Inquiry Received!</h3>
         <p className="text-gray-500 text-sm max-w-sm leading-relaxed">
-          Thank you for your interest in investing in GreeNest. Our team will reach out within 48 hours with
+          Thank you for your interest in investing in greenest. Our team will reach out within 48 hours with
           the investment deck and next steps.
         </p>
       </div>

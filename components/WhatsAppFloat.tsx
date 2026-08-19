@@ -2,16 +2,16 @@
 import Link from "next/link";
 
 export default function WhatsAppFloat() {
-  const phone = "919745648470";
+  const phone = "916282077926";
   const message = encodeURIComponent(
-    "Hello GreeNest Team,\nI would like to know more about the project.",
+    "Hello greenest team,\nI would like to know more about the project.",
   );
   return (
     <Link
       href={`https://wa.me/${phone}?text=${message}`}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat with GreeNest on WhatsApp"
+      aria-label="Chat with greenest on WhatsApp"
       className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full shadow-2xl bg-[#25D366] hover:scale-110 transition-transform duration-300"
     >
       <svg

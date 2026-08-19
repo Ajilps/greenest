@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://www.greenestco.in";
+  const base = "https://greenestco.in";
   const now = new Date();
 
   const staticRoutes = [
@@ -17,11 +17,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
     },
     {
-      url: `${base}/investment`,
-      priority: 0.8,
-      changeFrequency: "monthly" as const,
-    },
-    {
       url: `${base}/waitlist`,
       priority: 0.9,
       changeFrequency: "monthly" as const,
@@ -31,29 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
       changeFrequency: "monthly" as const,
     },
-    { url: `${base}/blog`, priority: 0.8, changeFrequency: "weekly" as const },
   ];
 
-  const blogSlugs = [
-    "best-places-kanthalloor",
-    "kanthalloor-vs-munnar",
-    "fruit-farms-kanthalloor",
-    "weekend-getaway-kochi",
-    "why-eco-tourism-matters",
-    "best-time-visit-kanthalloor",
-    "nature-retreats-kerala",
-    "hidden-gems-kerala-highlands",
-  ];
-
-  const blogRoutes = blogSlugs.map((slug) => ({
-    url: `${base}/blog/${slug}`,
-    priority: 0.7,
-    changeFrequency: "monthly" as const,
-    lastModified: now,
-  }));
-
-  return [
-    ...staticRoutes.map((r) => ({ ...r, lastModified: now })),
-    ...blogRoutes,
-  ];
+  return staticRoutes.map((route) => ({ ...route, lastModified: now }));
 }

@@ -18,15 +18,26 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.greenestco.in"),
+  metadataBase: new URL("https://greenestco.in"),
+  applicationName: "greenest",
+  manifest: "/site.webmanifest",
+  category: "travel",
+  creator: "greenest",
+  publisher: "greenest",
+  referrer: "origin-when-cross-origin",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   title: {
-    default: "GreeNest – Where Nature Feels Like Home | Kanthalloor, Kerala",
-    template: "%s | GreeNest",
+    default: "greenest — Where nature feels like home",
+    template: "%s | greenest",
   },
   description:
-    "GreeNest is a premium eco-friendly mountain homestay coming soon to Kanthalloor, Kerala. Join the waiting list, explore future experiences, and discover investment opportunities in sustainable tourism.",
+    "greenest is a thoughtful, eco-conscious mountain homestay in planning and construction in Kanthalloor, Kerala.",
   keywords: [
-    "GreeNest",
+    "greenest",
     "Kanthalloor homestay",
     "eco-friendly resort Kerala",
     "mountain retreat Kerala",
@@ -36,19 +47,44 @@ export const metadata: Metadata = {
     "Kerala highlands",
     "Idukki homestay",
     "nature retreat India",
+    "Kanthalloor resort",
+    "Kanthalloor eco resort",
+    "Kanthalloor family homestay",
+    "Kanthalloor accommodation",
+    "Kanthalloor stay",
+    "resorts in Kanthalloor",
+    "best homestay in Kanthalloor",
+    "farm stay Kanthalloor",
+    "mountain stay Kanthalloor",
+    "homestay near Munnar",
+    "mountain stay near Munnar",
+    "quiet stay near Munnar",
+    "Idukki mountain resort",
+    "eco resort Idukki",
+    "Kerala hill station resort",
+    "Western Ghats homestay",
+    "nature resort Kerala",
+    "eco friendly homestay India",
+    "apple orchard stay Kerala",
+    "strawberry farm stay Kerala",
+    "family vacation Kerala",
+    "Kerala mountain getaway",
+    "weekend getaway from Kochi",
+    "misty mountain retreat Kerala",
+    "sustainable family travel Kerala",
   ],
   openGraph: {
-    title: "GreeNest – Premium Eco Mountain Homestay | Kanthalloor Kerala",
+    title: "greenest — A mountain home in Kanthalloor, Kerala",
     description:
-      "A nature-inspired retreat with sunrise mountain views, fruit orchards, and homemade food. Coming soon to Kanthalloor.",
-    url: "https://www.greenestco.in",
-    siteName: "GreeNest",
+      "A nature-led stay with misty mountain views, fruit orchards and homemade food. Currently taking shape in Kanthalloor.",
+    url: "https://greenestco.in",
+    siteName: "greenest",
     images: [
       {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "GreeNest – Mountain homestay in Kanthalloor, Kerala",
+        url: "/images/greenest-mountain-sunrise.png",
+        width: 1672,
+        height: 941,
+        alt: "greenest mountain homestay in Kanthalloor, Kerala",
       },
     ],
     locale: "en_IN",
@@ -56,18 +92,24 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GreeNest – Premium Eco-Friendly Mountain Homestay | Kerala",
+    title: "greenest — A mountain home in Kanthalloor, Kerala",
     description:
-      "Discover sustainable luxury in Kanthalloor. Join the waiting list now.",
-    images: ["/og-image.jpg"],
+      "A thoughtful nature-led stay now taking shape in the Kerala highlands.",
+    images: ["/images/greenest-mountain-sunrise.png"],
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true },
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   alternates: {
-    canonical: "https://www.greenestco.in",
+    canonical: "https://greenestco.in",
   },
 };
 
@@ -81,25 +123,31 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://www.greenestco.in/#organization",
-        name: "GreeNest",
-        url: "https://www.greenestco.in",
+        "@id": "https://greenestco.in/#organization",
+        name: "greenest",
+        url: "https://greenestco.in",
+        logo: "https://greenestco.in/icons/android-chrome-512x512.png",
+        image: "https://greenestco.in/images/greenest-mountain-sunrise.png",
         description:
-          "Premium eco-friendly mountain homestay coming soon to Kanthalloor, Kerala, India.",
+          "Eco-conscious mountain homestay in planning and construction in Kanthalloor, Kerala, India.",
         contactPoint: {
           "@type": "ContactPoint",
-          telephone: "+91-99999-99999",
+          telephone: "+91-62820-77926",
+          email: "greenest5000@gmail.com",
           contactType: "customer service",
           availableLanguage: ["English", "Malayalam"],
         },
       },
       {
         "@type": "LodgingBusiness",
-        "@id": "https://www.greenestco.in/#lodging",
-        name: "GreeNest",
+        "@id": "https://greenestco.in/#lodging",
+        name: "greenest",
         description:
           "Premium eco-friendly mountain homestay in Kanthalloor, Kerala.",
-        url: "https://www.greenestco.in",
+        url: "https://greenestco.in",
+        image: "https://greenestco.in/images/greenest-mountain-sunrise.png",
+        telephone: "+91-62820-77926",
+        email: "greenest5000@gmail.com",
         address: {
           "@type": "PostalAddress",
           addressLocality: "Kanthalloor",
@@ -139,10 +187,12 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html
+      lang="en"
+      data-scroll-behavior="smooth"
+      className={`${inter.variable} ${playfair.variable}`}
+    >
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="manifest" href="/manifest.json" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
