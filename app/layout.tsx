@@ -79,14 +79,6 @@ export const metadata: Metadata = {
       "A nature-led stay with misty mountain views, fruit orchards and homemade food. Currently taking shape in Kanthalloor.",
     url: "https://greenestco.in",
     siteName: "greenest",
-    images: [
-      {
-        url: "/images/greenest-mountain-sunrise.png",
-        width: 1672,
-        height: 941,
-        alt: "greenest mountain homestay in Kanthalloor, Kerala",
-      },
-    ],
     locale: "en_IN",
     type: "website",
   },
@@ -95,7 +87,6 @@ export const metadata: Metadata = {
     title: "greenest — A mountain home in Kanthalloor, Kerala",
     description:
       "A thoughtful nature-led stay now taking shape in the Kerala highlands.",
-    images: ["/images/greenest-mountain-sunrise.png"],
   },
   robots: {
     index: true,
